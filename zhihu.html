@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>知乎 - 有问题，上知乎</title>
+        <link rel="stylesheet" type="text/css" href="zhihu.css">
+    </head>
+
+   <body>
+       <div class="root">
+           <!--整个页面部分-->
+           <div class="homepage">
+               <!--上半部分：页面主体内容部分（除了页脚的上半部分）-->
+               <div class="homepage-content">
+                   <!--图片logo部分-->
+                   <div id="block-logo">
+                        <img id="img-logo" src="img/logo_zhihu.png" />
+                   </div>
+
+                   <!--输入登陆信息的框-->
+                   <div class="login-box">
+                       <!--切换tab的块-->
+                       <div class="tabs">
+                            <div class="tab-op">免密码登陆</div>
+                            <div class="tab-op">密码登陆</div>
+                       </div>
+                       <!--框框中的表单！-->
+                       <div class="login-form">
+                           <!--手机号或者邮箱填写-->
+                           <div class="input-add-line">
+                            <input class="input-blank" type="text" placeholder="手机号或邮箱"> 
+                            </div>
+                            <!--密码填写-->
+                            <div class="input-add-line">
+                                <input class="input-blank" type="text" placeholder="密码">
+                                <img src="img/pwd_toshow.png" id="pwd-input-toShow"/>
+                                <img src="img/pwd_noshow.png" id="pwd-input-noShow" class="display-none"/>
+                            </div>
+                            <!--这里省略了一个captchaContainer-->
+                            <!--选择海外手机号登陆还是忘记密码-->
+                            <div class="login-option">
+                                <button type="button" class="btn-transparent btn-login-op-blue">海外手机号登陆</button>
+                                <button type="button" class="btn-transparent btn-login-op-grey">忘记密码？</button>
+                            </div>
+                            <!--登陆按钮-->
+                            <buttom type="submit" class="btn-submit" id="btn-login">登陆</buttom>
+                       </div>
+                       <!--表格下方的提示语句-->
+                       <div class="login-tips">
+                            <div>
+                                未注册手机验证后自动登陆，注册即代表同意
+                                <a href="https://www.zhihu.com/term/zhihu-terms">《知乎协议》</a>
+                                <a href="https://www.zhihu.com/term/privacy">《隐私保护指引》</a>
+                            </div>
+                       </div>
+                       <!--分割线-->
+                       <div id="login-divideLine">
+                       </div>
+                       <!--社交账号登陆-->
+                       <div class="login-socialLogin">
+                            社交账号登陆
+                            <div class="three-method-part">
+                                <div target="_blank" class="social-link-block">
+                                    <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx268fcfe924dcb171&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fwechat%3Faction%3Dlogin%26from%3D&response_type=code&scope=snsapi_login&state=65343336303034382d316238342d343639622d613830632d306437333565303764303737#wechat">
+                                        <img src="img/weixin_logo.png"/>
+                                        微信
+                                    </a>
+                                </div>
+                            <div class="social-link-block">
+                                <a target="_blank" hred="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&scope=get_user_info%2Cget_info%2Cadd_t%2Cadd_pic_t%2Cget_other_info%2Cget_fanslist%2Cget_idollist%2Cadd_idol%2Cadd_share&state=65343336303034382d316238342d343639622d613830632d306437333565303764303737&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fqqconn%3Faction%3Dlogin%26from%3D&response_type=code&client_id=100490701">
+                                    <img src="img/qq_logo.png"/>
+                                    QQ
+                                </a>
+                            </div>
+                            <div class="social-link-block">
+                                <a target="_parent" href="https://api.weibo.com/oauth2/authorize?scope=email&state=65343336303034382d316238342d343639622d613830632d306437333565303764303737&redirect_uri=http%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fsina&response_type=code&client_id=3063806388">
+                                    <img src="img/weibo_logo.png" />
+                                    微博
+                                </a>
+                            </div>
+                       </div>
+
+                       </div>
+                       <!--小框最下方的下载和开通-->
+                       <div class="login-tool">
+                            <button class="btn-box-bottom">
+                               <img src="img/create.png" />
+                               开通机构号
+                            </button>
+                            <div class="vertical-line"></div>
+                            <button class="btn-box-bottom btn-box-bottom-2">
+                               <img src="img/download_zhihu.png">
+                               下载知乎App
+                            </button>
+                        </div>
+                    </div>
+               </div>
+
+               <!--下半部分：页脚的内容-->
+                <footer class="homepage-footer">  
+                    <div id="first-line-link" class="footer-link">
+                        <a target="_blank" href="https://zhuanlan.zhihu.com/">知乎专栏</a>
+                        <a target="_blank" href="https://www.zhihu.com/roundtable">圆桌</a>
+                        <a target="_blank" href="https://www.zhihu.com/explore">发现</a>
+                        <a target="_blank" href="https://www.zhihu.com/app/">移动应用</a>
+                        <a target="_blank" href="https://www.zhihu.com/contact">联系我们</a>
+                        <a target="_blank" href="https://app.mokahr.com/apply/zhihu/3819#/?_k=807m0c">来知乎工作</a>
+                        <a class="last-a" target="_blank" href="https://www.zhihu.com/org/signup">注册机构号</a>
+                    </div>
+                    <span></span>
+                    <!--页脚第二行，知乎的各种许可-->
+                    <div class="footer-link">
+                        <p id="add-dot">@2020知乎·</p>
+                        <a target="_blank" href="https://tsm.miit.gov.cn/dxxzsp/">京ICP证110745号</a>
+                        <a target="_blank" href="http://www.beian.miit.gov.cn/">京ICP备13052560号 - 1</a>
+                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020088">
+                            <img src="img/police.png">
+                            京公网安备11010802010035号</a>
+                        <a class="last-a" target="_blank" href="https://zhstatic.zhihu.com/assets/zhihu/publish-license.jpg">出版物经营许可</a>
+                    </div>
+                    <span></span>
+                    <!--页脚第三行，知乎的举报区域-->
+                    <div class="footer-link">
+                        <a target="_blank" href="https://zhuanlan.zhihu.com/p/51068775">侵权举报</a>
+                        <a target="_blank" href="https://www.12377.cn/">网上有害信息举报专区</a>
+                        <a target="_blank" href="https://www.zhihu.com/jubao">儿童色情信息举报专区</a>
+                        <p>违法和不良信息举报：010-82716601</p>
+                    </div>
+                </footer>
+           </div>
+       </div>
+   </body>
+
+</html>

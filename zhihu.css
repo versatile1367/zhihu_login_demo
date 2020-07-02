@@ -1,0 +1,353 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px;
+}
+
+.root{
+    background: url("img/backgroud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #b8e5f8;
+}
+
+.homepage{
+    width:100%;
+    height:100vh;
+}
+
+.homepage-content{
+    width:100%;
+    height:89vh;
+    min-height: 688px;
+    box-sizing: border-box;
+}
+
+
+#block-logo{
+    /* text-align:center; */
+    width:128px;
+    margin:0 auto;
+    position: relative;
+    top:220px;
+}
+
+#img-logo{
+    width:128px;
+    height:81px;
+    margin-bottom: 24px;
+}
+
+
+.login-box{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    min-width: 0;
+    width:400px;
+    /*宽度这里应该可以取消，到时候再看！*/
+    /* height:497px; */
+    overflow: auto;
+    box-shadow: 0 1px 3px rgba(26,26,26, 0.1);
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin:0 auto;
+    position: relative;
+    top:220px;
+    text-align: center;
+}
+
+
+
+.tabs{
+    box-sizing: border-box;
+    width:352px;
+    height:60px;
+    margin:0 auto;
+    text-align:left;
+
+}
+
+.tab-op{
+    display: inline-block;
+    color: #040404;
+    font-size:16px;
+    border:none;
+    cursor: pointer;
+    margin-right: 24px;
+    line-height: 60px;
+}
+
+
+.login-form{
+    box-sizing: border-box;
+    width:352px;
+    height:238px;
+    margin:0 auto;
+
+}
+
+.input-add-line{
+    border-bottom: 1px solid #ebebeb;
+}
+
+.input-blank{
+    height:48px;
+    color:#1a1a1a;
+    border:none;
+    outline-style: none;
+    font-size:14px;
+    width:100%;
+
+}
+
+.input-blank::placeholder{
+    font-size: 14px;
+    color:#8590a6;
+}
+
+.input-add-line img{
+    position: absolute;
+    width:25px;
+    height:22px;
+    cursor: pointer;
+    right:24px;
+    margin-top:17px;
+}
+
+
+.btn-submit{
+    box-sizing: border-box;
+    width:352px;
+    height:36px;
+    line-height:36px;
+    color:#ffffff;
+    font-size: 14px;
+    text-align:center;
+    background-color:#0084ff;
+    border-radius:3px;
+    cursor: pointer;
+    position: absolute;
+    left:24px;
+    top:222px;
+
+}
+
+
+.btn-transparent{
+    background-color:transparent;
+    font-size:14px;
+    border:none;
+    border-radius: 0;
+    outline-style: none;
+    padding:0;
+}
+
+.btn-login-op-blue{
+    display: inline-block;
+    width:98px;
+    height:20px;
+    position: absolute;
+    left:24px;
+    color:#4484d8;
+    cursor: pointer;
+    margin-top:12px;
+}
+
+.btn-login-op-grey{
+    display: inline-block;
+    width:98px;
+    height:20px;
+    position: absolute;
+    right:0;
+    color:#9d9da1;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+
+
+
+/*未注册的提示部分*/
+.login-tips{
+    width: 352px;
+    color:gray;
+    margin:0 auto;
+    border-bottom: 1px solid #dfdede;
+    text-align:left;
+    padding-bottom: 10px;
+}
+
+.login-tips a{
+    text-decoration: none;
+    color:gray;
+}
+
+
+
+/*社交账号登陆部分*/
+.login-socialLogin{
+    display: inline-block;
+    box-sizing: border-box;
+    width:400px;
+    height:60px;
+    color:#8590a6;
+    text-align:left;
+    line-height:60px;
+    font-size:14px;
+    padding-left:24px;
+    position: relative;
+
+}
+
+.three-method-part{
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right:24px;
+}
+
+.social-link-block{
+    display:inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    height:60px;
+    width:57px;
+    margin-left:10px;
+    color:#8590a6;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+
+.social-link-block a{
+    display: inline-block;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:#8590a6;
+}
+
+.social-link-block img{
+    width:25px;
+    height:20px;
+    vertical-align: middle;
+}
+
+
+
+/*开通机构号和下载知乎App的部分*/
+.login-tool{
+    box-sizing: border-box;
+    position: relative;
+    left:0;
+    width:400px;
+    height:60px;
+    background-color:#f2f5fa;
+ 
+}
+
+
+.btn-box-bottom{
+    background-color:#f2f5fa;
+    font-size:14px;
+    cursor: pointer;
+    color:#0084ff;
+    text-align:center;
+    float:left;
+    border:none;
+    padding:0;
+    margin-top:17px;
+    margin-bottom:17px;
+    margin-left:32px;
+    margin-right:32px;
+    width:33%;
+}
+
+
+.btn-box-bottom img{
+    width:31px;
+    height:24px;
+    vertical-align: middle;
+}
+
+.vertical-line{
+    box-sizing: border-box;
+    width:1px;
+    height:25px;
+    padding:0;
+    margin:0 auto;
+    position: absolute;;
+    left:196px;
+    background-color: #cccccf;
+    margin-top:16px;
+}
+
+
+
+
+
+
+
+
+/*页脚部分的css*/
+footer{
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+    height:11vh;
+    margin-bottom: 40px;
+    color:#ffffff;
+}
+
+
+.footer-link{
+    color:#ffffff;
+    text-align: center;
+    font-size:12px;
+    text-shadow: 0 1px 2px #999;
+    padding:2px;
+    margin:2px;
+}
+
+.footer-link a:link{
+    color:white;
+    text-decoration: none;
+}
+
+.footer-link a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+.footer-link a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.footer-link a::after{
+    content:"\B7";
+}
+
+.footer-link p{
+    display:inline;
+    color:#ffffff;
+}
+
+.footer-link #add-dot{
+    content:"\B7";
+}
+
+.footer-link .last-a::after{
+    content:none;
+}
+
+.footer-link img{
+    position: relative;
+    width:20px;
+    height:20px;
+    margin-right:2px;
+    vertical-align: middle;
+}
